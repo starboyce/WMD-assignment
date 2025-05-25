@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - Botswana Life</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Botswana Life Insurance</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="quote.html">Get a Quote</a>
+            <a href="Feedback.html">Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Request a Quote</h2>
+        <form onsubmit="return validateForm();">
+            <label>Full Name: <input type="text" id="name" required></label><br>
+            <label>ID Number: <input type="text" id="idnumber" required></label><br>
+            <label>Insurance Type:
+                <select id="type">
+                    <option>Life Cover</option>
+                    <option>Funeral Plan</option>
+                    <option>Investment</option>
+                </select>
+            </label><br>
+            <label>Coverage Amount: <input type="number" id="amount" required></label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>Contact us: @botswanalife.co.bw | +267 71 234 567</p>
+    </footer>
+</body>
+</html>
